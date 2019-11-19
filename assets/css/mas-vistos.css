@@ -1,0 +1,116 @@
+input[name="slider-select-element"] {
+	display: none;
+}
+
+#masvistos {
+	background-color: white;
+	height: 448px;
+}
+
+@media(max-width:425px) {
+	#masvistos {
+		height: 100%;
+	}
+}
+
+#masvistos h4 {
+	margin-left: 20px;
+}
+
+#slider-arrows {
+	margin: -230px 0 0 0;
+}
+
+#slider-box {
+	height: 100%;
+	width: 300%;
+}
+
+#slider-box .product-img {
+	margin-bottom: 20px;
+}
+
+#slider-box .home-list {
+	margin-bottom: 46px;
+}
+
+#slider-container {
+	height: 20%;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: left;
+	width: 82%;
+}
+
+.slider-element {
+	float: left;
+	width: 33.333%;
+	padding-left: 1px;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2),
+#element2:checked ~ #slider-arrows label:nth-child(3),
+#element3:checked ~ #slider-arrows label:nth-child(1) {
+	display: block;
+	float: right;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(3),
+#element2:checked ~ #slider-arrows label:nth-child(1),
+#element3:checked ~ #slider-arrows label:nth-child(2) {
+	display: block;
+	float: left;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2):before,
+#element2:checked ~ #slider-arrows label:nth-child(3):before,
+#element3:checked ~ #slider-arrows label:nth-child(1):before {
+	color: #9b9a9a;
+	content: "\f054";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(3):before,
+#element2:checked ~ #slider-arrows label:nth-child(1):before,
+#element3:checked ~ #slider-arrows label:nth-child(2):before {
+	color: #9b9a9a;
+	content: "\f053";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-container #slider-box {
+	margin-left: 0;
+}
+
+#element2:checked ~ #slider-container #slider-box {
+	margin-left: -100%;
+}
+
+#element3:checked ~ #slider-container #slider-box {
+	margin-left: -200%;
+}
+
+#slider-arrows label {
+	color: transparent;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+#slider-box {
+
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75s ease;
+	transition: all 0.75s ease;
+}
