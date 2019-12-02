@@ -1253,6 +1253,10 @@ dl.toggle.time-line:before {
 	color: #fff;
 }
 
+.btn-login{
+	background: #FF7000;
+	color: #fff !important;
+}
 .btn-solid {
 	background: #000;
 	color: #fff;
